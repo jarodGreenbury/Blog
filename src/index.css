@@ -42,3 +42,16 @@ code {
   margin: 40px auto;
   padding: 20px;
 }
+.blog-preview{
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #5a0000;
+}
+.blog-preview:hover{
+  box-shadow: 2px 5px 5px rgba(15, 15, 15, 0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #bd0e0e;
+  margin-bottom: 8px;
+}
