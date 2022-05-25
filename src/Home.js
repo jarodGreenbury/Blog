@@ -7,6 +7,7 @@ const Home = () => {
         {title: 'My  website', body: 'my blog', author: 'bob', id: 2},
         {title: 'website', body: 'hello ', author: 'rod', id: 3}
     ]);
+    const [isPending, setIsPending]= useState(true);
 
     const handleDelete = (id) =>{
         const newBlogs = blogs.filter(blog => blog.id !== id)
@@ -15,7 +16,7 @@ const Home = () => {
 
     return ( 
         <div className="home">
-            
+            {isPending && <div>Loading... </div>}
             <BlogList blogs = {blogs} title = "All blogs" handleDelete={handleDelete}/>
         </div>
      );
